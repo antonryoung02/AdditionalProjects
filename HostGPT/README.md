@@ -23,7 +23,6 @@ The model does a great job with simple questions, such as whether an item exists
 It does a good job parsing each item and does the math for me. I would like to try langchain's PALChain for this type of question to ensure accuracy.
 
 ### Limitations/Failure Cases:
-The model doesn't properly handle substitution/removal requests. This probably just needs database improvements with longer explanations about what's possible.
 
 As seen in some of the images, the PARSED_QUESTIONS are sometimes irrelevant. I think adding a window memory for the last 1-2 messages would help it understand the context of the question, as right now it is only passed in what the user just said.
 
@@ -35,4 +34,4 @@ Asking for lists of a type of item fails because my queries only return the top 
 Sometimes the agent will catch them, but typically if the question is picked up by PARSED QUESTIONS the agent will respond with the answer even if it is unrelated.
 
 ![Bad audio failure](projectImages/Failure_bad_audio_recording.png)
-Google speech heard 'Pubhouse burger' as 'Popeyes burger' and the model used the user's pronunciation instead of the text from the database.
+Google speech heard 'Pubhouse burger' as 'Popeyes burger' and the model used the user's pronunciation instead of the text from the database. The model also didn't properly handle substitution/removal requests. This probably just needs database improvements with longer explanations about what's possible.
