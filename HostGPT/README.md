@@ -13,6 +13,8 @@ It is however, too slow to work in a real-time phone call (4-8 seconds per respo
 
 This model is possibly generalizable to any QA interaction with definable objectives, but I have yet to try.
 
+From working in a restaurant, I know that customers oftentimes ask weird and unpredictable questions and I would like HostGPT to ask for employee input (just an input() call in this project) when these questions come up.
+
 ### Success Cases:
 ![Full order success](projectImages/Success_full_order.png)
 The model does a great job with simple questions, such as whether an item exists on the menu and handles unknown menu items perfectly. The model recognizes when an objective was met, and ends execution appropriately.
