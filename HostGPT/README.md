@@ -9,7 +9,7 @@ The output by the conversation model is translated into audio with Google's text
 # Version 1 of HostGPT
 
 I was surprised about the effectiveness of using OpenAI functions as information extractors, which made the while loop and question parsing/answering possible.
-It is however, too slow to work in a real-time phone call (4-8 seconds), and I really disliked GPT-3.5-turbo's outputs for this use case. In conversation, it was too repetitive and drawn out, and it wouldn't follow the function calling prompts. This could probably be improved with better prompting and would be necessary to get speed improvements.
+It is however, too slow to work in a real-time phone call (4-8 seconds per response). I didn't use GPT-3.5-turbo because I disliked its outputs for this use case. In conversation, it was too long and repetitive, and it wouldn't consistently follow the function calling prompts. This could probably be improved with better prompting and would be necessary to get speed improvements.
 
 This model is possibly generalizable to any QA interaction with definable objectives, but I have yet to try.
 
@@ -25,7 +25,7 @@ The model doesn't properly handle substitution/removal requests. This probably j
 
 As seen in some of the images, the PARSED_QUESTIONS are sometimes irrelevant. I think adding a window memory for the last 1-2 messages would help it understand the context of the question, as right now it is only passed in what the user just said.
 
-If you refuse to give your name/number, the model agrees to your privacy concerns and doesn't ask again, but the objective isn't met and the loop continues 
+If you refuse to give your name/number, the model agrees with your privacy concerns and doesn't ask again, but the objective isn't met and the loop continues 
 
 Asking for lists of a type of item fails because my queries only return the top k matches, which may not include everything. Manually adding these types of answers into the database would fix this.
 
