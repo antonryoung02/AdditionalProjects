@@ -6,7 +6,7 @@ A set of additional projects
 An application that uses Google Cloud, Pinecone, and ChatGPT to take user orders like a host at a restaurant.
 
 ## DesignrApp/
-An unfinished social media marketplace application with Swift and Django
+An unfinished social media marketplace application with Swift, Django, and Postgres
 
 ## CalendarGPT
 204 Web Development final project
