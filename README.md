@@ -19,5 +19,7 @@ The OpenAI API is used as a text-to-json formatter which does all of this for yo
 1. New event is added -> Format to JSON with date, existing tag, and event content inferred from user input.
 2. New tag is added -> Send all existing events without tags and see if the new tag applies.
 
+[![CalendarGPT Demo](https://img.youtube.com/vi/Kg8LHG0mfD0/0.jpg)](https://www.youtube.com/watch?v=Kg8LHG0mfD0)
+
 
 
