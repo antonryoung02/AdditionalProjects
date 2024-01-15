@@ -8,6 +8,13 @@ An application that uses Google Cloud, Pinecone, and ChatGPT to take user orders
 ## DesignrApp/
 An unfinished social media marketplace application with Swift, Django, and Postgres
 
+## Quantviz
+Final group project in 457 Intro to Visualization. 
+
+We fetched financial data from Polygon and Quiverquant to create a stock data visualization website.
+
+url: https://csex57.github.io/quantviz/
+
 ## CalendarGPT
 204 Web Development final project
 
