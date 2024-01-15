@@ -11,7 +11,7 @@ An unfinished social media marketplace application with Swift and Django
 ## CalendarGPT
 204 Web Development final project
 
-Application built with react, schedules and tags events with ChatGPT using natural language.
+Application built with react, schedules and tags events with ChatGPT using natural language input.
 A lot of the calendar apps I've used are quite tedious to maintain. You have to manually add each event to their corresponding days, set tags, etc.
 
 The OpenAI API is used as a text-to-json formatter which does all of this for you. The API is called in 2 different scenarios.
